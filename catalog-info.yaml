@@ -13,7 +13,7 @@ metadata:
     argocd/app-selector: rhtap/gitops=azure-go-gh
     backstage.io/kubernetes-id: azure-go-gh 
     backstage.io/techdocs-ref: dir:.
-    dev.azure.com/project-repo: lucarval-rhtap/azure-go-gh
+    # dev.azure.com/project-repo: lucarval-rhtap/azure-go-gh
     dev.azure.com/project: shared-public
     dev.azure.com/build-definition: lucarval-rhtap.azure-go-gh
     quay.io/repository-slug: lucarval-rhtap/azure-go-gh
