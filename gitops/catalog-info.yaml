@@ -1,0 +1,23 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: azure-go-gh-gitops
+  description: This is GitOps manifest for azure-go-gh   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-selector: rhtap/gitops=azure-go-gh
+    backstage.io/kubernetes-id: azure-go-gh 
+    backstage.io/techdocs-ref: dir:.
+    dev.azure.com/project-repo: lucarval-rhtap/azure-go-gh-gitops
+    dev.azure.com/project: shared-public
+    dev.azure.com/build-definition: lucarval-rhtap.azure-go-gh-gitops
+spec:
+  type: gitops
+  owner: group:default/lcarva 
+  lifecycle: experimental
+  dependsOn:
+    - component:azure-go-gh
